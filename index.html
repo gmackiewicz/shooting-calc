@@ -159,7 +159,7 @@
         <button id="summary-btn" class="btn">Summary</button>
         <button id="calculate-btn" class="btn">Calculator</button>
         <button id="new-target-btn" class="btn">New target</button>
-        <button id="install-button" class="btn">"Add to home screen</button>
+        <button id="install-button" class="btn">Add to home screen</button>
     </div>
     
     <div id="content" class="content">
@@ -189,7 +189,7 @@
     </div>
     
     <div id="score-info" class="score-info">
-        Score: <span id="current-score">0/0</span> <span id="shots-count-container" style="display: none;">| Shots: <span id="shots-count">0</span></span>
+        Score: <span id="current-score">0/0</span> <span id="shots-count-container">| Shots: <span id="shots-count">0</span></span>
     </div>
     
     <div id="numpad" class="numpad">
@@ -257,7 +257,7 @@
         const numpadElement = document.getElementById('numpad');
         const currentScoreElement = document.getElementById('current-score');
         const shotsCountElement = document.getElementById('shots-count');
-        const shotsCountContainer = document.getElementById('shots-count-container');
+        // const shotsCountContainer = document.getElementById('shots-count-container');
         const shotsListElement = document.getElementById('shots-list');
         const historyListElement = document.getElementById('history-list');
         const miniHistoryListElement = document.getElementById('mini-history-list');
@@ -294,12 +294,12 @@
             currentScoreElement.textContent = `${sum}/${total}`;
             shotsCountElement.textContent = currentTarget.shots.length;
             
-            // Show shot count only if there are shots
-            if (currentTarget.shots.length > 0) {
-                shotsCountContainer.style.display = 'inline';
-            } else {
-                shotsCountContainer.style.display = 'none';
-            }
+            // // Show shot count only if there are shots
+            // if (currentTarget.shots.length > 0) {
+            //     shotsCountContainer.style.display = 'inline';
+            // } else {
+            //     shotsCountContainer.style.display = 'none';
+            // }
         }
         
         // Update shots list
