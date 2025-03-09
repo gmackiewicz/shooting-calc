@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.clear-btn {
+    padding: 8px 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.clear-btn:hover {
+    background-color: #d32f2f;
+}
+
+.content {
+    min-height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.numpad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.num-btn {
+    position: relative;
+    height: 60px;
+    font-size: 24px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.num-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.counter {
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+.score-display {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.shots-list {
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    padding: 10px;
+    word-wrap: break-word;
+    line-height: 1.6;
+}
+
+.shot-chip {
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 2px;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.shot-chip:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.history-item {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history-container {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.score-info {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.remove-btn {
+    padding: 2px 6px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.remove-btn:hover {
+    background-color: #d32f2f;
+}
